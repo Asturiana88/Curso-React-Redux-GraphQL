@@ -11,3 +11,27 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.loader{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border-color: black black white;
+  border-width: 8px;
+  border-style: solid;
+  animation: rotacion .7s linear infinite;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@keyframes rotacion{
+  0% {
+    transform: rotate(0deg);
+  }
+  25%{
+    border-color: yellow;
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
